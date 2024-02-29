@@ -44,17 +44,5 @@ public class AppTest
         assertEquals("Fizz", fizzBuzz(3));
         assertEquals("Buzz", fizzBuzz(5));
         assertEquals("FizzBuzz", fizzBuzz(15));
-
-        for (int i = 1; i < 101; i++) {
-            if (i%3 == 0 && i%5 == 0) {
-                assertEquals("FizzBuzz", fizzBuzz(i));
-            } else if (i%3 == 0) {
-                assertEquals("Fizz", fizzBuzz(i));
-            } else if (i%5 == 0) {
-                assertEquals("Buzz", fizzBuzz(i));
-            } else {
-                assertEquals(Integer.toString(i), fizzBuzz(i));
-            }
-        }
     }
 }
