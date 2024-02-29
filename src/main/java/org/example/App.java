@@ -8,7 +8,14 @@ public class App
 {
     public static void main( String[] args )
     {
-
+        StringBuilder result = new StringBuilder();
+        for (int i = 1; i < 101; i++) {
+            result.append(fizzBuzz(i));
+            if (i != 100) {
+                result.append(",");
+            }
+        }
+        System.out.println(result);
     }
 
     public static String fizzBuzz(int input) {
